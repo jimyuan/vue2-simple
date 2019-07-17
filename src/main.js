@@ -1,12 +1,17 @@
+import 'normalize.css/normalize.css'
+import '@/assets/scss/docs.scss'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import svgIcon from '@/components/g-svg-icon'
+// import store from './store'
 
 Vue.config.productionTip = false
+Vue.component('svg-icon', svgIcon)
 
 new Vue({
   router,
-  store,
-  render: h => h(App)
+  // store,
+  render: h => h(App),
+  mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
 }).$mount('#app')

@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -20,10 +22,14 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
+    "prerender-spa-plugin": "^3.2.1",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "svg-sprite-loader": "^4.1.6",
+    "vue-cli-plugin-prerender-spa": "^1.1.5",
+    "vue-template-compiler": "^2.6.10",
+    "zip-webpack-plugin": "^3.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -41,11 +47,14 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%"
+        ]
+      }
     }
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions"
+    "> 1%"
   ]
 }

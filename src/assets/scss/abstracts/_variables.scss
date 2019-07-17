@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+$font-family-monospace: monospace;
+
+// color setting
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
+$info: #909399;
+
+$spacer: 20px !default;
+$bottom-gap: 50px !default;
+$white: #fff;
+
+$link-color: $primary;
+$brand-danger: $danger;
+$brand-success: $success;
+$table-border-color: $info;
+$table-inverse-bg: invert($white);
+
+$z-layers:(
+  'userbar': 20,
+  'navbar': 20,
+  'footer': 20,
+  'default': 1
+);

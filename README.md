@@ -1,4 +1,5 @@
 # vue2-simple
+简单小网站的 VUE2 应用。
 
 ## Project setup
 ```
