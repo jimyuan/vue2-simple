@@ -23,7 +23,6 @@ module.exports = {
   },
 
   configureWebpack: config => {
-    console.log(config.output)
     // 添加打压缩包插件
     if (productionFlag && zipPackage) {
       const ZipPlugin = require('zip-webpack-plugin')
@@ -55,7 +54,7 @@ module.exports = {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
-        '/'
+        '/', '/about'
       ],
       useRenderEvent: true,
       headless: true,

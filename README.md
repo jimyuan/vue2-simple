@@ -1,5 +1,5 @@
 # vue2-simple
-简单小网站的 VUE2 应用。
+简单小网站的 VUE2 应用。在 `vue.config.js` 中可预先定义需要预渲染的路径。
 
 ## Project setup
 ```
