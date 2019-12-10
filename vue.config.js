@@ -51,6 +51,7 @@ module.exports = {
   },
 
   pluginOptions: {
+    /*
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
@@ -60,5 +61,6 @@ module.exports = {
       headless: true,
       onlyProduction: true
     }
+    */
   }
 }

@@ -12,6 +12,5 @@ Vue.component('svg-icon', svgIcon)
 new Vue({
   router,
   // store,
-  render: h => h(App),
-  mounted: () => document.dispatchEvent(new Event('x-app-rendered'))
+  render: h => h(App)
 }).$mount('#app')
